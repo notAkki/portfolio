@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mousefollow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 34vmax;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    filter: blur(15vmax);
+    /* background-color: rgb(255, 67, 75); */
+    background: linear-gradient(#030014, #7a92f0);
+    opacity: 0.5;
+    z-index: -10;
+    transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import MouseFollow from "../../components/main/MouseFollow";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,7 +20,10 @@ export default function RootLayout({
             <body
                 className={`${inter.className} bg-gradient-to-br from-[#030014] from-50% to-[#1a1134] leading-relaxed text-slate-400 antialiased selection:bg-[#7a92f0] selection:text-indigo-950 min-h-screen`}
             >
-                {children}
+                <div>
+                    {children}
+                    <MouseFollow />
+                </div>
             </body>
         </html>
     );
