@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div className="max-w-md text-sm text-slate-500 lg:pb-20">
+        <div className="max-w-md text-sm text-slate-400 lg:pb-20">
             <p>Akshar Barot</p>
             <p className="mt-1">
                 Built with{" "}
