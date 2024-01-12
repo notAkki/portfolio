@@ -18,7 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="!scroll-smooth">
             <body
-                className={`${inter.className} bg-gradient-to-br from-[#030014] from-50% to-[#1a1134] leading-relaxed text-slate-400 antialiased selection:bg-[#7a92f0] selection:text-indigo-950 min-h-screen overscroll-contain`}
+                className={`${inter.className} bg-gradient-to-br from-[#030014] from-50% to-[#1a1134] leading-relaxed text-slate-400 antialiased selection:bg-[#7a92f0] selection:text-indigo-950 min-h-screen overscroll-none`}
             >
                 <div>
                     {children}
