@@ -1,7 +1,6 @@
 "use client";
-import React, { MutableRefObject } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import TestNav from "../main/TestNav";
 
 const navLinks = [
     { name: "About", href: "#about" },
@@ -10,29 +9,37 @@ const navLinks = [
 ];
 
 const Nav = () => {
+    const [visibleKey, setVisibleKey] = useState(0);
+    const onClick = (item: any, key: any) => {
+        setVisibleKey(key);
+    };
+
     return (
         <nav className="nav hidden lg:block">
             <ul className="mt-16 w-max">
-                {navLinks.map((link) => {
+                {navLinks.map((item, key) => {
                     return (
-                        <li key={link.name}>
+                        <li
+                            key={`item-${key}`}
+                            className={`${
+                                key === visibleKey ? " active" : ""
+                            } group text-slate-500 py-3`}
+                        >
                             <a
-                                className="group nav-item flex items-center py-3"
-                                href={link.href}
-                                key={link.name}
+                                href={`${item.href}`}
+                                onClick={() => onClick(item, key)}
                             >
                                 <span
-                                    className={`nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none`}
+                                    className={`indicator inline-block mr-4 h-px w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200 transition-all`}
                                 ></span>
-                                <span
-                                    className={`nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200`}
-                                >
-                                    {link.name}
+                                <span className="text-xs font-bold uppercase tracking-widest group-hover:text-slate-200">
+                                    {item.name}
                                 </span>
                             </a>
                         </li>
                     );
                 })}
+                {/* <div className="mover"></div> */}
             </ul>
         </nav>
     );

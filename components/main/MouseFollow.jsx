@@ -16,7 +16,7 @@ const Mousefollow = () => {
             const x = clientX - element.offsetLeft - element.offsetWidth / 2;
             const y = clientY - element.offsetTop - element.offsetHeight / 2;
             setPoint({ x, y });
-            console.log(x, y);
+            // console.log(x, y);
         };
 
         window.addEventListener("pointermove", handlePointerMove);

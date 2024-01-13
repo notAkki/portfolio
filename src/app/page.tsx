@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from "react";
 import Content from "../../components/main/Content";
 import Header from "../../components/main/Header";
 
