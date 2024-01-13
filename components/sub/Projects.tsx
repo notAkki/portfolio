@@ -21,7 +21,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <span className="border-b-2 border-transparent pb-px transition group-hover:border-indigo-500">
+                        <span className="border-b-2 border-transparent pb-px transition group-hover:border-[#8181f0]">
                             Click here for resume
                         </span>
                         <span className="ml-2 group-hover:translate-x-2 ease-in-out duration-200">

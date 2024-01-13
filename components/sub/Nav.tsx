@@ -16,31 +16,33 @@ const Nav = () => {
 
     return (
         <nav className="nav hidden lg:block">
-            <ul className="mt-16 w-max">
-                {navLinks.map((item, key) => {
-                    return (
-                        <li
-                            key={`item-${key}`}
-                            className={`${
-                                key === visibleKey ? " active" : ""
-                            } group text-slate-500 py-3`}
-                        >
-                            <a
-                                href={`${item.href}`}
-                                onClick={() => onClick(item, key)}
+            <div className="relative">
+                <ul className="mt-16 w-max">
+                    {navLinks.map((item, key) => {
+                        return (
+                            <li
+                                key={`item-${key}`}
+                                className={`${
+                                    key === visibleKey ? " active" : ""
+                                } group text-slate-500 py-3`}
                             >
-                                <span
-                                    className={`indicator inline-block mr-4 h-px w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200 transition-all`}
-                                ></span>
-                                <span className="text-xs font-bold uppercase tracking-widest group-hover:text-slate-200">
-                                    {item.name}
-                                </span>
-                            </a>
-                        </li>
-                    );
-                })}
-                {/* <div className="mover"></div> */}
-            </ul>
+                                <a
+                                    href={`${item.href}`}
+                                    onClick={() => onClick(item, key)}
+                                >
+                                    <span
+                                        className={`indicator inline-block h-px w-0 transition-all duration-500 ease-in-out`}
+                                    ></span>
+                                    <span className="ml-3 text-xs font-bold uppercase tracking-widest group-hover:text-slate-200">
+                                        {item.name}
+                                    </span>
+                                </a>
+                            </li>
+                        );
+                    })}
+                    <div className="mover"></div>
+                </ul>
+            </div>
         </nav>
     );
 };

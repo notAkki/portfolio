@@ -9,7 +9,7 @@
     height: 25vmax;
     aspect-ratio: 1;
     border-radius: 50%;
-    filter: blur(12vmax);
+    filter: blur(14vmax);
     background: linear-gradient(90deg, #030014, #7a92f0);
     opacity: 0.5;
     z-index: -10;
@@ -17,12 +17,8 @@
     transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-.navigation ul li.active {
-    color: #fff;
-}
-
 .nav ul li span.indicator {
-    background-color: #475569;
+    background-color: #00000000;
 }
 
 .nav ul li.active {
@@ -30,17 +26,30 @@
 }
 
 .nav ul li.active span.indicator {
-    background-color: #e2e8f0;
-    width: 64px;
+    background-color: #00000000;
+    width: 24px;
 }
 
-/* .indicator {
+.mover {
     position: absolute;
-    top: -50%;
-    width: 70px;
-    height: 70px;
-    background: #032a59;
-    border-radius: 50%;
+    top: 15px;
+    width: 2px;
+    height: 20px;
+    background: #e2e8f0;
+
     border: 6px solid var(--clr);
     transition: 0.5s;
-} */
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav ul li:nth-child(1).active ~ .mover {
+    transform: translateY(calc(40px * 0));
+}
+
+.nav ul li:nth-child(2).active ~ .mover {
+    transform: translateY(calc(50px * 1));
+}
+
+.nav ul li:nth-child(3).active ~ .mover {
+    transform: translateY(calc(50px * 2));
+}

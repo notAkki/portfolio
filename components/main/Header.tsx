@@ -15,7 +15,7 @@ const Header = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <h2 className="text-lg mt-3 font-medium tracking-tight text-slate-200 sm:text-xl">
+                    <h2 className="text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
                         Software Engineer @ University of Waterloo
                         <span className="inline-flex">
                             <svg

@@ -5,20 +5,19 @@ const About = () => {
         <div>
             <p className="text-slate-200 text-s font-bold mb-4 ">ABOUT</p>
             <p className="mb-4 leading-relaxed">
-                I am a passionate software developer very interested in bridging
-                the gap between beautiful UI/UX and high-performance
-                development.
+                I am an aspiring software developer with a keen interest in
+                crafting UI/UX and exploring the bridge between technology and
+                design.
             </p>
             <p className="mb-4 leading-relaxed">
-                I am currently working on expanding my full-stack development
-                skills while teaching myself machine learning and cloud
-                development.
+                I'm looking to expand my horizons, build on my full-stack
+                development skills and I am currently learning about machine
+                learning and cloud development.
             </p>
             <p className="leading-relaxed">
-                In my free time, I can be found playing Minecraft or on
-                Monkeytype. I also enjoy playing basketball, soccer, and
-                ultimate frisbee, and I'm trying to get into the gym more
-                consistently.
+                In my free time, I like playing Minecraft with friends and speed
+                typing. When I'm away from my computer, I enjoy basketball and
+                ultimate frisbee as well as Rubik's cube solving.
             </p>
         </div>
     );
