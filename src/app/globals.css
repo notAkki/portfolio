@@ -9,8 +9,9 @@
     height: 25vmax;
     aspect-ratio: 1;
     border-radius: 50%;
-    filter: blur(14vmax);
-    background: linear-gradient(90deg, #030014, #7a92f0);
+    filter: blur(12vmax);
+    /* filter: blur(0vmax); */
+    background: radial-gradient(#7a92f0, #030014);
     opacity: 0.5;
     z-index: -10;
 
