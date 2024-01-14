@@ -46,7 +46,7 @@ function Project({
                                 />
                             </svg>
                         </div>
-                        <p className="text-sm mt-2 text-slate-400">
+                        <p className="text-sm mt-2 text-slate-400 mr-5">
                             {description}
                         </p>
                         <ul className="flex flex-wrap mt-4 gap-2">

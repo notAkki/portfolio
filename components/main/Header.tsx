@@ -15,7 +15,7 @@ const Header = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <h2 className="text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+                    <h2 className="font-medium tracking-tight text-slate-200 sm:text-xl">
                         Software Engineer @ University of Waterloo
                         <span className="inline-flex">
                             <svg
@@ -38,8 +38,23 @@ const Header = () => {
                 </a>
 
                 <p className="mt-4 max-w-xs leading-normal">
-                    Looking for work Summer 2024
+                    Seeking summer 2024 internships
                 </p>
+                <div className="mr-[69px] mt-10">
+                    <p className="mb-4 leading-relaxed">
+                        I'm an aspiring software developer with keen interest in
+                        crafting UI/UX and exploring technology and design.
+                    </p>
+                    <p className="mb-4 leading-relaxed">
+                        I'm working on expanding my horizons by learning about
+                        machine learning and cloud development.
+                    </p>
+                    <p className="leading-relaxed">
+                        I like playing Minecraft with friends and speed typing.
+                        I also enjoy basketball, ultimate frisbee, and Rubik's
+                        cube solving.
+                    </p>
+                </div>
                 <Nav />
             </div>
             <Links />

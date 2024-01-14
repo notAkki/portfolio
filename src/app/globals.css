@@ -33,10 +33,11 @@
 
 .mover {
     position: absolute;
-    top: 15px;
-    width: 2px;
-    height: 20px;
+    top: 30px;
+    width: 72px;
+    height: 2px;
     background: #e2e8f0;
+    border-radius: 10px;
 
     border: 6px solid var(--clr);
     transition: 0.5s;
@@ -44,13 +45,14 @@
 }
 
 .nav ul li:nth-child(1).active ~ .mover {
-    transform: translateY(calc(40px * 0));
+    transform: translateX(calc(40px * 0));
 }
 
 .nav ul li:nth-child(2).active ~ .mover {
-    transform: translateY(calc(50px * 1));
+    transform: translateX(calc(115px * 1));
+    width: 57px;
 }
-
+/* 
 .nav ul li:nth-child(3).active ~ .mover {
     transform: translateY(calc(50px * 2));
-}
+} */
