@@ -14,14 +14,17 @@ function Project({
     isLink,
 }: ProjectProps) {
     return (
-        <div className="mb-3 sm:mb-8 last:mb-0">
+        <div className="mb-6 sm:mb-8 last:mb-0">
             <a
                 href={link}
                 target={isLink ? "_blank" : "_self"}
                 rel="noreferrer noopener"
             >
-                <section className="rounded-xl overflow-hidden relative transition ease-in-out bg-black/0 hover:bg-[#7a92f006] hover:shadow-lg hover:shadow-indigo-950/20 duration-300 grid sm:grid-cols-2 group">
-                    <div className="pt-4 pb-7 px-5 sm:pl-5 sm:pr-2 sm:pt-10 flex flex-col h-full">
+                <div
+                    className="rounded-xl transition ease-in-out bg-black/0 hover:bg-[#7a92f006] hover:shadow-lg hover:shadow-indigo-950/20 duration-300 
+                relative flex flex-col-reverse sm:flex-row"
+                >
+                    <div className="pt-4 pb-7 px-5 sm:w-[50%] sm:pl-5 sm:pr-2 sm:pt-7 sm:flex sm:flex-col sm:h-full">
                         <div className="flex text-lg text-slate-200 font-semibold group">
                             <h3 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-lg">
                                 {title}
@@ -46,7 +49,7 @@ function Project({
                                 />
                             </svg>
                         </div>
-                        <p className="text-sm mt-2 text-slate-400 mr-5">
+                        <p className="text-sm mt-2 text-slate-400 sm:mr-5">
                             {description}
                         </p>
                         <ul className="flex flex-wrap mt-4 gap-2">
@@ -60,16 +63,16 @@ function Project({
                             ))}
                         </ul>
                     </div>
-                    <div>
+                    <div className="px-4 sm:px-0 sm:w-[50%]">
                         <Image
                             src={imageUrl}
                             alt="Project I worked on"
                             quality={95}
                             priority
-                            className="hidden sm:block absolute rounded-lg top-[5%] right-[5%] w-[45%] h-[90%] border-2 border-[#7a92f0]/15 object-cover group-hover:border-[#7a92f0]/50 group-hover:shadow-md group-hover:shadow-indigo-950/20 transition ease-in-out duration-500"
+                            className="h-[90%] sm:mt-[5%] sm:place-self-center aspect-[5/3] rounded-lg border-2 border-[#7a92f0]/45 sm:border-[#7a92f0]/15 object-cover group-hover:border-[#7a92f0]/50 group-hover:shadow-md group-hover:shadow-indigo-950/20 transition ease-in-out duration-500"
                         />
                     </div>
-                </section>
+                </div>
             </a>
         </div>
     );

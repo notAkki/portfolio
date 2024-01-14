@@ -40,7 +40,7 @@ const Header = () => {
                 <p className="mt-4 max-w-xs leading-normal">
                     Seeking summer 2024 internships
                 </p>
-                <div className="mr-[69px] mt-10">
+                <div className="lg:mr-[69px] mt-10">
                     <p className="mb-4 leading-relaxed">
                         I'm an aspiring software developer with keen interest in
                         crafting UI/UX and exploring technology and design.
