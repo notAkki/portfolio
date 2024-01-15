@@ -24,7 +24,7 @@ function Project({
                     className="rounded-xl transition ease-in-out bg-black/0 hover:bg-[#7a92f006] hover:shadow-lg hover:shadow-indigo-950/20 duration-300 
                 relative flex flex-col-reverse sm:flex-row"
                 >
-                    <div className="pt-4 pb-7 px-5 sm:w-[50%] sm:pl-5 sm:pr-2 sm:pt-7 sm:flex sm:flex-col sm:h-full">
+                    <div className="pt-4 pb-7 px-5 sm:w-[50%] sm:pl-5 sm:pr-2 sm:pt-7 sm:flex sm:flex-col sm:h-full group">
                         <div className="flex text-lg text-slate-200 font-semibold group">
                             <h3 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-lg">
                                 {title}
