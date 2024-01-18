@@ -4,7 +4,7 @@ import { PostMetadata } from "../PostMetadata";
 const PostPreview = (props: PostMetadata) => {
     return (
         <div className="mb-3 sm:mb-8 last:mb-0">
-            <div className="rounded-xl overflow-hidden relative transition ease-in-out bg-black/0 hover:bg-[#7a92f006] hover:shadow-lg hover:shadow-indigo-950/20 duration-300 grid sm:grid-cols-2 group">
+            <div className="rounded-xl overflow-hidden relative transition ease-in-out bg-black/0 hover:bg-[#7a92f006] hover:shadow-lg hover:shadow-indigo-950/20 duration-300 group">
                 <a
                     href={`/posts/${props.slug}`}
                     target="_blank"
