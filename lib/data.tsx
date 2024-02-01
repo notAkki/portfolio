@@ -2,6 +2,7 @@ import React from "react";
 import jarvis from "../public/jarvis.png";
 import shopping from "../public/shopping.png";
 import click from "../public/click.png";
+import basic from "../public/basic.png";
 
 export const projectsData = [
     {
@@ -11,6 +12,15 @@ export const projectsData = [
         tags: ["Next.js", "Python", "Flask", "Three.js", "OpenCV", "Mediapipe"],
         imageUrl: jarvis,
         link: "https://github.com/ishaan1013/jarvis",
+        isLink: true,
+    },
+    {
+        title: "BASIC Web",
+        description:
+            "A BASIC variant and compiler for frontend web development built during UofT Hacks 2024",
+        tags: ["TypeScript", "BASIC", "HTML/CSS"],
+        imageUrl: basic,
+        link: "https://devpost.com/software/basic-web",
         isLink: true,
     },
     {
