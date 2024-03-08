@@ -1,8 +1,22 @@
-import React from "react";
 import jarvis from "../public/jarvis.png";
 import shopping from "../public/shopping.png";
 import click from "../public/click.png";
 import basic from "../public/basic.png";
+
+import watstreet from "../public/watstreet.png";
+
+export const experienceData = [
+    {
+        position: "UI/UX Frontend Developer",
+        company: "Wat Street",
+        date: "2024 - Present",
+        description:
+            "Designed and developed web apps and a testing platform for the University of Waterloo's quantitative finance design team.",
+        tags: ["Figma", "React", "shadcn"],
+        link: "https://watstreet.netlify.app/",
+        imageUrl: watstreet,
+    },
+] as const;
 
 export const projectsData = [
     {

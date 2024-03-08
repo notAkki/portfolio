@@ -1,7 +1,8 @@
 ---
 title: "Back to the BASICs"
 subtitle: "Building a BASIC compiler for web development during UofT Hacks 2024"
-date: "2024-01-30"
+# date: "2024-01-30"
+date: "Jan 30, 2024"
 ---
 
 <br>

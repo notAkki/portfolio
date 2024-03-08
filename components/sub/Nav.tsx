@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import TestNav from "../main/TestNav";
 
 const navLinks = [
+    { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Writing", href: "#writing" },
 ];

@@ -22,7 +22,7 @@ function Project({
             >
                 <div
                     className="rounded-xl transition ease-in-out bg-black/0 hover:bg-[#7a92f006] hover:shadow-lg hover:shadow-indigo-950/20 duration-300 
-                relative flex flex-col-reverse sm:flex-row"
+                relative flex flex-col-reverse sm:flex-row group"
                 >
                     <div className="pt-4 pb-7 px-5 sm:w-[50%] sm:pl-5 sm:pr-2 sm:pt-7 sm:flex sm:flex-col sm:h-full group">
                         <div className="flex text-lg text-slate-200 font-semibold group">
@@ -63,7 +63,7 @@ function Project({
                             ))}
                         </ul>
                     </div>
-                    <div className="px-4 sm:px-0 sm:w-[50%]">
+                    <div className="px-4 sm:px-0 sm:w-[50%] group">
                         <Image
                             src={imageUrl}
                             alt="Project I worked on"

@@ -1,7 +1,8 @@
 ---
 title: "Just A Rather Very Intelligent System"
 subtitle: "The process of bringing JARVIS to life using holograms and 3D models"
-date: "2023-12-20"
+# date: "2023-12-20"
+date: "Dec 20, 2023"
 ---
 
 <br>

@@ -45,11 +45,17 @@
 }
 
 .nav ul li:nth-child(1).active ~ .mover {
-    transform: translateX(calc(40px * 0));
+    transform: translateX(0);
+    width: 88px;
 }
 
 .nav ul li:nth-child(2).active ~ .mover {
-    transform: translateX(calc(115px * 1));
+    transform: translateX(128px);
+    width: 72px;
+}
+
+.nav ul li:nth-child(3).active ~ .mover {
+    transform: translateX(242px);
     width: 57px;
 }
 /* 
