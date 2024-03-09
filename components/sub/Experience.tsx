@@ -33,7 +33,7 @@ function Project({
                     <div className="pb-4 ml-4 pr-2 pt-2 flex flex-col group">
                         <p className="text-xs font-bold">{date}</p>
                         <div className="text-lg text-slate-200 font-semibold group">
-                            <h3 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-lg">
+                            <h2 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-lg text-pretty">
                                 {position}
                                 <span>
                                     <svg
@@ -52,8 +52,8 @@ function Project({
                                         />
                                     </svg>
                                 </span>
-                            </h3>
-                            <h4 className="-mt-1.5 font-normal text-base group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-lg">
+                            </h2>
+                            <h4 className="font-normal text-base group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-lg">
                                 @ {company}
                             </h4>
                         </div>
