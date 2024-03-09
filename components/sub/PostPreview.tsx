@@ -5,11 +5,7 @@ const PostPreview = (props: PostMetadata) => {
     return (
         <div className="mb-0">
             <div className="rounded-xl overflow-hidden relative transition ease-in-out bg-black/0 hover:bg-[#7a92f006] hover:shadow-lg hover:shadow-indigo-950/20 duration-300 group">
-                <a
-                    href={`/posts/${props.slug}`}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                >
+                <a href={`/posts/${props.slug}`} rel="noreferrer noopener">
                     <div className="pt-4 pb-7 px-5 sm:pl-5 sm:pr-2 sm:pt-6 flex flex-col h-full">
                         <p className="text-xs font-bold">{props.date}</p>
                         <div className="flex text-lg text-slate-200 font-semibold group">
