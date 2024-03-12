@@ -18,7 +18,7 @@ function Project({
         <div className="mb-6 sm:mb-8">
             <a href={link} target={"_blank"} rel="noreferrer noopener">
                 <div
-                    className="rounded-xl transition ease-in-out bg-black/0 hover:bg-[#7a92f006] hover:shadow-lg hover:shadow-indigo-950/20 duration-300 
+                    className="rounded-xl transition ease-in-out bg-black/0 hover:bg-[#7a92f006] duration-300 
                 flex flex-row group pt-4"
                 >
                     {/* <div className="pl-4 group w-[80px]"> */}
@@ -33,7 +33,7 @@ function Project({
                     <div className="pb-4 ml-4 pr-2 pt-2 flex flex-col group">
                         <p className="text-xs font-bold">{date}</p>
                         <div className="text-lg text-slate-200 font-semibold group">
-                            <h2 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-lg text-pretty">
+                            <h2 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-pretty">
                                 {position}
                                 <span>
                                     <svg
@@ -53,7 +53,7 @@ function Project({
                                     </svg>
                                 </span>
                             </h2>
-                            <h4 className="font-normal text-base group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-lg">
+                            <h4 className="font-normal text-base group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
                                 @ {company}
                             </h4>
                         </div>
