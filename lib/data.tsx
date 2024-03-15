@@ -31,7 +31,7 @@ export const projectsData = [
     {
         title: "BASIC Web",
         description:
-            "A BASIC variant and compiler for frontend web development built during UofT Hacks 2024",
+            "A BASIC variant and compiler for frontend web development built during UofT Hacks 2024.",
         tags: ["TypeScript", "BASIC", "HTML/CSS"],
         imageUrl: basic,
         link: "https://devpost.com/software/basic-web",
@@ -40,7 +40,7 @@ export const projectsData = [
     {
         title: "Shopping List App",
         description:
-            "Cross-platform listing application deployed as a Progressive Web App (PWA)",
+            "Cross-platform listing application deployed as a Progressive Web App (PWA).",
         tags: ["Javascript", "Firebase", "HTML/CSS"],
         imageUrl: shopping,
         link: "#0",

@@ -15,11 +15,11 @@ const Header = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <h2 className="font-medium tracking-tight text-slate-200 sm:text-xl">
+                    <h2 className="font-medium tracking-tight text-slate-200 sm:text-xl text-balance mt-4">
                         Software Engineer @ University of Waterloo
                         <span className="inline-flex">
                             <svg
-                                className="h-4 w-4 mt-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition duration-500 ease-in-out"
+                                className="h-4 w-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition duration-500 ease-in-out"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
                                 viewBox="0 0 16 16"
@@ -38,7 +38,7 @@ const Header = () => {
                 </a>
 
                 <p className="mt-4 max-w-xs leading-normal">
-                    Seeking summer 2024 internships
+                    Seeking summer 2024 internships.
                 </p>
                 <div className="lg:mr-[69px] mt-10">
                     <p className="mb-4 leading-relaxed">

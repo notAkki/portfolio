@@ -33,7 +33,7 @@ function Project({
                     <div className="pb-4 ml-4 pr-2 pt-2 flex flex-col group">
                         <p className="text-xs font-bold">{date}</p>
                         <div className="text-lg text-slate-200 font-semibold group">
-                            <h2 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-pretty">
+                            <h2 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-balance">
                                 {position}
                                 <span>
                                     <svg
