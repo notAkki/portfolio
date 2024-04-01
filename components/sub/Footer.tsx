@@ -3,7 +3,10 @@ import React from "react";
 const Footer = () => {
     return (
         <div className="max-w-md text-sm text-slate-400 lg:pb-20">
-            <p>Akshar Barot</p>
+            <p>
+                Akshar Barot <span className="mx-1 font-bold text-md">·</span>{" "}
+                2024
+            </p>
             <div className="text-pretty">
                 <p className="mt-1">
                     Built with{" "}
