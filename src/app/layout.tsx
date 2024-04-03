@@ -7,7 +7,26 @@ const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Akshar Barot",
-    description: "",
+    description:
+        "I'm an 18-year-old aspiring Software Developer studying at the University of Waterloo. I build innovative and interesting projects bridging the gap between technology and design. I'm looking for work Summer 2024.",
+    keywords: [
+        "akshar barot",
+        "akshar",
+        "barot",
+        "software developer",
+        "student",
+        "university of waterloo",
+        "uwaterloo",
+        "waterloo",
+        "toronto",
+        "st. louis",
+        "summer 2024",
+        "web developer",
+        "full stack",
+        "frontend",
+        "ui",
+        "ux",
+    ],
 };
 
 export default function RootLayout({

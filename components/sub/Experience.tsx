@@ -13,6 +13,7 @@ function Project({
     tags,
     link,
     imageUrl,
+    alt,
 }: ProjectProps) {
     return (
         <div className="mb-6 sm:mb-8">
@@ -24,7 +25,7 @@ function Project({
                     {/* <div className="pl-4 group w-[80px]"> */}
                     <Image
                         src={imageUrl}
-                        alt="Project I worked on"
+                        alt={alt}
                         quality={100}
                         priority
                         className="pl-4 h-16 w-16 sm:h-20 sm:w-20 object-scale-down group"

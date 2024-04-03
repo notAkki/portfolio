@@ -12,6 +12,7 @@ function Project({
     imageUrl,
     link,
     isLink,
+    alt,
 }: ProjectProps) {
     return (
         <div className="mb-6 sm:mb-8 last:mb-0">
@@ -66,7 +67,7 @@ function Project({
                     <div className="px-4 sm:px-0 sm:w-[50%] group">
                         <Image
                             src={imageUrl}
-                            alt="Project I worked on"
+                            alt={alt}
                             quality={95}
                             priority
                             className="h-[90%] sm:mt-[5%] sm:place-self-center aspect-[5/3] rounded-lg border-2 border-[#7a92f0]/45 sm:border-[#7a92f0]/15 object-cover group-hover:border-[#7a92f0]/50 group-hover:shadow-md group-hover:shadow-indigo-950/20 transition ease-in-out duration-500"

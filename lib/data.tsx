@@ -15,6 +15,7 @@ export const experienceData = [
         tags: ["Figma", "React", "shadcn"],
         link: "https://watstreet.netlify.app/",
         imageUrl: watstreet,
+        alt: "Wat Street Logo",
     },
 ] as const;
 
@@ -27,6 +28,7 @@ export const projectsData = [
         imageUrl: jarvis,
         link: "https://github.com/ishaan1013/jarvis",
         isLink: true,
+        alt: "Jarvis Project Image",
     },
     {
         title: "BASIC Web",
@@ -36,6 +38,7 @@ export const projectsData = [
         imageUrl: basic,
         link: "https://devpost.com/software/basic-web",
         isLink: true,
+        alt: "BASICWeb Project Image",
     },
     {
         title: "Shopping List App",
@@ -45,6 +48,7 @@ export const projectsData = [
         imageUrl: shopping,
         link: "#0",
         isLink: false,
+        alt: "Shopping List Project Image",
     },
     {
         title: "Click Clack",
@@ -54,5 +58,6 @@ export const projectsData = [
         imageUrl: click,
         link: "https://notakki.github.io/ClickClack/",
         isLink: true,
+        alt: "Click Clack Project Image",
     },
 ] as const;
