@@ -28,7 +28,7 @@ function Project({
                         alt={alt}
                         quality={100}
                         priority
-                        className="pl-4 h-16 w-16 sm:h-20 sm:w-20 object-scale-down group"
+                        className="ml-4 h-16 w-16 sm:h-[70px] sm:w-[70px] object-scale-down group"
                     />
                     {/* </div> */}
                     <div className="pb-4 ml-4 pr-2 pt-2 flex flex-col group">
