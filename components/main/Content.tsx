@@ -8,13 +8,22 @@ import Experiences from "../sub/Experiences";
 const Content = () => {
     return (
         <div id="content" className="pt-24 lg:w-1/2">
-            <section id="experience" className="mb-6 scroll-mt-24 md:mb-24">
+            <section
+                id="experience"
+                className="section mb-6 scroll-mt-24 md:mb-24"
+            >
                 <Experiences />
             </section>
-            <section id="projects" className="mb-6 scroll-mt-24 md:mb-24">
+            <section
+                id="projects"
+                className="section mb-6 scroll-mt-24 md:mb-24"
+            >
                 <Projects />
             </section>
-            <section id="writing" className="mb-16 scroll-mt-24 md:mb-24">
+            <section
+                id="writing"
+                className="section mb-16 scroll-mt-24 md:mb-24"
+            >
                 <Writings />
             </section>
             <Footer />

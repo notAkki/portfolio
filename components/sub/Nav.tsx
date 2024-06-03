@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import TestNav from "../main/TestNav";
 
 const navLinks = [
     { name: "Experience", href: "#experience" },
@@ -10,9 +9,51 @@ const navLinks = [
 
 const Nav = () => {
     const [visibleKey, setVisibleKey] = useState(0);
+    const [clicked, setClicked] = useState(false);
     const onClick = (item: any, key: any) => {
         setVisibleKey(key);
+        setClicked(true);
+        setTimeout(() => {
+            setClicked(false);
+        }, 1000);
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            let scrollPosition = window.scrollY;
+            const sections = document.querySelectorAll("section");
+
+            if (sections) {
+                if (
+                    sections[0].offsetTop <= scrollPosition + 100 &&
+                    sections[0].offsetTop + sections[0].offsetHeight >
+                        scrollPosition + 100
+                ) {
+                    setVisibleKey(0);
+                } else if (
+                    sections[1].offsetTop <= scrollPosition + 100 &&
+                    sections[1].offsetTop + sections[1].offsetHeight >
+                        scrollPosition - 100
+                ) {
+                    setVisibleKey(1);
+                }
+                if (
+                    sections[2].offsetTop <= scrollPosition + 500 &&
+                    sections[2].offsetTop + sections[2].offsetHeight >
+                        scrollPosition + 100
+                ) {
+                    setVisibleKey(2);
+                }
+            }
+        };
+
+        if (!clicked) {
+            window.addEventListener("scroll", handleScroll);
+        }
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    });
 
     return (
         <nav className="nav hidden lg:block">
