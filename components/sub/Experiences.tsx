@@ -21,7 +21,7 @@ const Projects = () => {
                     <span className="border-b-2 border-transparent pb-px transition group-hover:border-[#7a92f0]">
                         Click here for resume
                     </span>
-                    <span className="ml-2 group-hover:translate-x-2 ease-in-out duration-200">
+                    <span className="ml-2 group-hover:translate-x-2 group-hover:text-[#a3b4f6] ease-in-out duration-200">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"

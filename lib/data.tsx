@@ -7,11 +7,11 @@ import watstreet from "../public/watstreet.png";
 
 export const experienceData = [
     {
-        position: "UI/UX Frontend Developer",
+        position: "Frontend Lead",
         company: "Wat Street",
         date: "2024 - Present",
         description:
-            "Designed and developed web apps and a testing platform for the University of Waterloo's quantitative finance design team.",
+            "Managed team designing and building web apps and a testing platform for the University of Waterloo's quantitative finance design team.",
         tags: ["Figma", "React", "shadcn"],
         link: "https://watstreet.netlify.app/",
         imageUrl: watstreet,
@@ -29,6 +29,8 @@ export const projectsData = [
         link: "https://github.com/ishaan1013/jarvis",
         isLink: true,
         alt: "Jarvis Project Image",
+        achievement: "Featured on OpenCV Live",
+        hasAchievement: true,
     },
     {
         title: "BASIC Web",
@@ -39,6 +41,8 @@ export const projectsData = [
         link: "https://devpost.com/software/basic-web",
         isLink: true,
         alt: "BASICWeb Project Image",
+        achievement: "UofT Hacks 2024 Winner",
+        hasAchievement: true,
     },
     {
         title: "Shopping List App",
@@ -49,6 +53,8 @@ export const projectsData = [
         link: "#0",
         isLink: false,
         alt: "Shopping List Project Image",
+        achievement: "",
+        hasAchievement: false,
     },
     {
         title: "Click Clack",
@@ -59,5 +65,7 @@ export const projectsData = [
         link: "https://notakki.github.io/ClickClack/",
         isLink: true,
         alt: "Click Clack Project Image",
+        achievement: "",
+        hasAchievement: false,
     },
 ] as const;

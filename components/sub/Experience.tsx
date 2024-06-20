@@ -22,7 +22,6 @@ function Project({
                     className="rounded-xl transition ease-in-out bg-black/0 hover:bg-[#7a92f006] duration-300 
                 flex flex-row group pt-4"
                 >
-                    {/* <div className="pl-4 group w-[80px]"> */}
                     <Image
                         src={imageUrl}
                         alt={alt}
@@ -30,7 +29,6 @@ function Project({
                         priority
                         className="ml-4 h-16 w-16 sm:h-[70px] sm:w-[70px] object-scale-down group"
                     />
-                    {/* </div> */}
                     <div className="pb-4 ml-4 pr-2 pt-2 flex flex-col group">
                         <p className="text-xs font-bold">{date}</p>
                         <div className="text-lg text-slate-200 font-semibold group">

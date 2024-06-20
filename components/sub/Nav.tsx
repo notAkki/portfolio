@@ -71,7 +71,7 @@ const Nav = () => {
                                     href={`${item.href}`}
                                     onClick={() => onClick(item, key)}
                                 >
-                                    <span className="text-xs font-bold uppercase tracking-widest group-hover:text-slate-200">
+                                    <span className="text-xs font-bold uppercase tracking-widest hover:text-slate-200 transition ease-in-out duration-200">
                                         {item.name}
                                     </span>
                                 </a>

@@ -13,6 +13,8 @@ function Project({
     link,
     isLink,
     alt,
+    achievement,
+    hasAchievement,
 }: ProjectProps) {
     return (
         <div className="mb-6 sm:mb-8 last:mb-0">
@@ -49,6 +51,13 @@ function Project({
                                     d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
                                 />
                             </svg>
+                        </div>
+                        <div
+                            className={
+                                hasAchievement ? "text-sm font-bold" : "hidden"
+                            }
+                        >
+                            {achievement}
                         </div>
                         <p className="text-sm mt-2 text-slate-400 sm:mr-5">
                             {description}

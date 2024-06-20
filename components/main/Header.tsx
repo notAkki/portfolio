@@ -38,7 +38,7 @@ const Header = () => {
                 </a>
 
                 <p className="mt-4 max-w-xs leading-normal">
-                    Seeking summer 2024 internships.
+                    Seeking winter 2025 internships.
                 </p>
                 <div className="lg:mr-[69px] mt-10">
                     <p className="mb-4 leading-relaxed">

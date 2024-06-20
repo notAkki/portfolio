@@ -6,7 +6,7 @@ const Links = () => {
             <ul className="ml-1 mt-8 flex items-center">
                 <li className="mr-8 text-xs">
                     <a
-                        className="block hover:text-slate-200"
+                        className="block hover:text-slate-200 transition ease-in-out duration-200"
                         href="https://github.com/notAkki"
                         target="_blank"
                         rel="noreferrer noopener"
@@ -24,7 +24,7 @@ const Links = () => {
                 </li>
                 <li className="mr-8 text-xs">
                     <a
-                        className="block hover:text-slate-200"
+                        className="block hover:text-slate-200 transition ease-in-out duration-200"
                         href="https://www.linkedin.com/in/aksharbarot/"
                         target="_blank"
                         rel="noreferrer noopener"
@@ -43,7 +43,24 @@ const Links = () => {
                 </li>
                 <li className="mr-8 text-xs">
                     <a
-                        className="block hover:text-slate-200"
+                        className="block hover:text-slate-200 transition ease-in-out duration-200"
+                        href="https://x.com/notakki_"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            className="h-6 w-6"
+                            viewBox="0 0 16 16"
+                        >
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        className="block hover:text-slate-200 transition ease-in-out duration-200"
                         href="mailto:akshar.barot67@gmail.com"
                         target="_blank"
                         rel="noreferrer noopener"
