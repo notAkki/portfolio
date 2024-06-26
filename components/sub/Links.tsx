@@ -6,7 +6,7 @@ const Links = () => {
             <ul className="ml-1 mt-8 flex items-center">
                 <li className="mr-8 text-xs">
                     <a
-                        className="block hover:text-slate-200 transition ease-in-out duration-200"
+                        className="block hover:text-slate-200 transition ease-in-out duration-100"
                         href="https://github.com/notAkki"
                         target="_blank"
                         rel="noreferrer noopener"
@@ -24,7 +24,7 @@ const Links = () => {
                 </li>
                 <li className="mr-8 text-xs">
                     <a
-                        className="block hover:text-slate-200 transition ease-in-out duration-200"
+                        className="block hover:text-slate-200 transition ease-in-out duration-100"
                         href="https://www.linkedin.com/in/aksharbarot/"
                         target="_blank"
                         rel="noreferrer noopener"
@@ -43,7 +43,7 @@ const Links = () => {
                 </li>
                 <li className="mr-8 text-xs">
                     <a
-                        className="block hover:text-slate-200 transition ease-in-out duration-200"
+                        className="block hover:text-slate-200 transition ease-in-out duration-100"
                         href="https://x.com/notakki_"
                         target="_blank"
                         rel="noreferrer noopener"
@@ -60,7 +60,7 @@ const Links = () => {
                 </li>
                 <li>
                     <a
-                        className="block hover:text-slate-200 transition ease-in-out duration-200"
+                        className="block hover:text-slate-200 transition ease-in-out duration-100"
                         href="mailto:akshar.barot67@gmail.com"
                         target="_blank"
                         rel="noreferrer noopener"

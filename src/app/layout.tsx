@@ -7,8 +7,7 @@ const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Akshar Barot",
-    description:
-        "I'm an 18-year-old aspiring Software Developer studying at the University of Waterloo. I build innovative and interesting projects bridging the gap between technology and design. I'm looking for work Summer 2024.",
+    description: "Full-stack developer bridging tech and design @ UWaterloo",
     keywords: [
         "akshar barot",
         "akshar",
