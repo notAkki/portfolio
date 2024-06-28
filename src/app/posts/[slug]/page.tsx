@@ -13,6 +13,8 @@ const getPostContent = (slug: string) => {
     return matterResult;
 };
 
+export const dynamicParams = false;
+
 export const generateStaticParams = async () => {
     const posts = getPostMetadata();
     return posts.map((post) => ({
