@@ -6,16 +6,16 @@ const Header = () => {
     return (
         <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
             <div>
-                <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-200">
+                <div className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-200">
                     Akshar Barot
-                </h1>
+                </div>
                 <a
                     className="flex text-slate-200 group"
                     href="https://se-webring.xyz/"
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <h2 className="font-medium tracking-tight text-slate-200 sm:text-xl text-balance mt-4">
+                    <div className="font-medium tracking-tight text-slate-200 sm:text-xl text-balance mt-4">
                         Software Engineer @ University of Waterloo
                         <span className="inline-flex">
                             <svg
@@ -34,26 +34,26 @@ const Header = () => {
                                 />
                             </svg>
                         </span>
-                    </h2>
+                    </div>
                 </a>
 
-                <p className="mt-4 max-w-xs leading-normal">
+                <div className="mt-4 max-w-xs leading-normal">
                     Seeking winter 2025 internships.
-                </p>
+                </div>
                 <div className="lg:mr-[69px] mt-10">
-                    <p className="mb-4 leading-relaxed">
+                    <div className="mb-4 leading-relaxed">
                         I'm an aspiring software developer with keen interest in
                         crafting UI/UX and exploring technology and design.
-                    </p>
-                    <p className="mb-4 leading-relaxed">
+                    </div>
+                    <div className="mb-4 leading-relaxed">
                         I'm working on expanding my horizons by learning about
                         machine learning and cloud development.
-                    </p>
-                    <p className="leading-relaxed">
+                    </div>
+                    <div className="leading-relaxed">
                         I like playing Minecraft with friends and speed typing.
                         I also enjoy basketball, ultimate frisbee, and Rubik's
                         cube solving.
-                    </p>
+                    </div>
                 </div>
                 <Nav />
             </div>

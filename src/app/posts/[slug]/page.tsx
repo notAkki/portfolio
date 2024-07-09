@@ -27,11 +27,6 @@ const page = (props: any) => {
     const post = getPostContent(slug);
     return (
         <>
-            {/* <Head>
-                <title>{post.data.title}</title>
-                <meta name="description" content={post.data.subtitle} />
-                <meta name="keywords" content={post.data.keywords.join(",")} />
-            </Head> */}
             <div className="max-w-3xl mx-auto pt-12 lg:pt-24 px-6 text-slate-200 lg:pb-20">
                 <div className="relative">
                     <div className="absolute -left-24">
@@ -52,19 +47,19 @@ const page = (props: any) => {
                                     />
                                 </svg>
                             </div>
-                            <p className="opacity-0 group-hover:opacity-100 group-hover:block text-[12px] text-slate-200 group duration-200">
+                            <div className="opacity-0 group-hover:opacity-100 group-hover:block text-[12px] text-slate-200 group duration-200">
                                 Go back
-                            </p>
+                            </div>
                         </a>
                     </div>
                     <div>
-                        <h1 className="text-4xl tracking-tight font-bold">
+                        <div className="text-4xl tracking-tight font-bold">
                             {post.data.title}
-                        </h1>
-                        <p className="font-light font-xs text-slate-400">
+                        </div>
+                        <div className="font-light font-xs text-slate-400">
                             {post.data.date}
-                        </p>
-                        <p className="mt-2">{post.data.subtitle}</p>
+                        </div>
+                        <div className="mt-2">{post.data.subtitle}</div>
                     </div>
                 </div>
                 <article className="prose prose-invert tracking-wide">

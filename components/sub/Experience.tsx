@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { experienceData } from "../../lib/data";
 import Image from "next/image";
 
-type ProjectProps = (typeof experienceData)[number];
+type ExpProps = (typeof experienceData)[number];
 
 function Project({
     position,
@@ -14,7 +14,7 @@ function Project({
     link,
     imageUrl,
     alt,
-}: ProjectProps) {
+}: ExpProps) {
     return (
         <div className="mb-6 sm:mb-8">
             <a href={link} target={"_blank"} rel="noreferrer noopener">
@@ -30,9 +30,9 @@ function Project({
                         className="ml-4 h-16 w-16 sm:h-[70px] sm:w-[70px] object-scale-down group"
                     />
                     <div className="pb-4 ml-4 pr-2 pt-2 flex flex-col group">
-                        <p className="text-xs font-bold">{date}</p>
+                        <div className="text-xs font-bold">{date}</div>
                         <div className="text-lg text-slate-200 font-semibold group">
-                            <h2 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-balance">
+                            <div className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-balance">
                                 {position}
                                 <span>
                                     <svg
@@ -51,14 +51,14 @@ function Project({
                                         />
                                     </svg>
                                 </span>
-                            </h2>
-                            <h4 className="font-normal text-base group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
+                            </div>
+                            <div className="font-normal text-base group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
                                 @ {company}
-                            </h4>
+                            </div>
                         </div>
-                        <p className="text-sm mt-2 text-slate-400 mr-5">
+                        <div className="text-sm mt-2 text-slate-400 mr-5">
                             {description}
-                        </p>
+                        </div>
                         <ul className="flex flex-wrap mt-4 gap-2">
                             {tags.map((tag, index) => (
                                 <li

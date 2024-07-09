@@ -3,12 +3,12 @@ import React from "react";
 const Footer = () => {
     return (
         <div className="max-w-md text-sm text-slate-400 lg:pb-20">
-            <p>
+            <div>
                 Akshar Barot <span className="mx-1 font-bold text-md">·</span>{" "}
                 2024
-            </p>
+            </div>
             <div className="text-pretty">
-                <p className="mt-1">
+                <div className="mt-1">
                     Built with{" "}
                     <a
                         className="font-medium text-slate-300"
@@ -37,9 +37,9 @@ const Footer = () => {
                     >
                         Vercel
                     </a>
-                </p>
+                </div>
             </div>
-            <p className="mt-1">
+            <div className="mt-1">
                 Inspired by{" "}
                 <a
                     className="font-medium text-slate-300"
@@ -49,7 +49,7 @@ const Footer = () => {
                 >
                     Brittany Chiang
                 </a>
-            </p>
+            </div>
         </div>
     );
 };

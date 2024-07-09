@@ -29,9 +29,9 @@ function Project({
                 >
                     <div className="pt-4 pb-7 px-5 sm:w-[50%] sm:pl-5 sm:pr-2 sm:pt-7 sm:flex sm:flex-col sm:h-full group">
                         <div className="flex text-lg text-slate-200 font-semibold group">
-                            <h3 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
+                            <div className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
                                 {title}
-                            </h3>
+                            </div>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -59,9 +59,9 @@ function Project({
                         >
                             {achievement}
                         </div>
-                        <p className="text-sm mt-2 text-slate-400 sm:mr-5">
+                        <div className="text-sm mt-2 text-slate-400 sm:mr-5">
                             {description}
-                        </p>
+                        </div>
                         <ul className="flex flex-wrap mt-4 gap-2">
                             {tags.map((tag, index) => (
                                 <li

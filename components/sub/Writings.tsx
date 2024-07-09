@@ -9,7 +9,7 @@ const Writings = () => {
     ));
     return (
         <div>
-            <p className="text-slate-200 text-s font-bold mb-4 ">WRITING</p>
+            <div className="text-slate-200 text-s font-bold mb-4 ">WRITING</div>
             <div>{postPreviews}</div>
         </div>
     );

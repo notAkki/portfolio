@@ -7,9 +7,9 @@ const PostPreview = (props: PostMetadata) => {
             <div className="rounded-xl relative transition ease-in-out bg-black/0 hover:bg-[#7a92f006] duration-300 group">
                 <a href={`/posts/${props.slug}`} rel="noreferrer noopener">
                     <div className="pt-4 pb-7 px-5 sm:pl-5 sm:pr-2 sm:pt-6 flex flex-col h-full">
-                        <p className="text-xs font-bold">{props.date}</p>
+                        <div className="text-xs font-bold">{props.date}</div>
                         <div className="flex text-lg text-slate-200 font-semibold group">
-                            <h2 className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-pretty">
+                            <div className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-pretty">
                                 {props.title}
                                 <span>
                                     <svg
@@ -28,11 +28,11 @@ const PostPreview = (props: PostMetadata) => {
                                         />
                                     </svg>
                                 </span>
-                            </h2>
+                            </div>
                         </div>
-                        <p className="text-sm mt-2 text-slate-400">
+                        <div className="text-sm mt-2 text-slate-400">
                             {props.subtitle}
-                        </p>
+                        </div>
                     </div>
                 </a>
             </div>
