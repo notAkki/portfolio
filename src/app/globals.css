@@ -24,6 +24,22 @@
     transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
+.mousefollowmobile {
+    position: fixed;
+    height: 30vmax;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    filter: blur(10vmax);
+    /* filter: blur(0vmax); */
+    /* background: radial-gradient(#7a92f0, #030014); */
+    /* background: radial-gradient(#4343ff, #030014); */
+    background: #5151ff;
+    opacity: 0.5;
+    z-index: -10;
+
+    transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
 .nav ul li span.indicator {
     background-color: #00000000;
 }

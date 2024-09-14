@@ -35,7 +35,7 @@ function ProjectReview({
                                 fill="currentColor"
                                 className={
                                     isLink
-                                        ? "inline h-4 w-4 ml-2 mt-1 sm:group-hover:translate-x-1 group-hover:-translate-y-0.5 transition ease-in-out duration-500 group-hover:text-[#a3b4f6]"
+                                        ? "inline h-4 w-4 ml-2 mt-1 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition ease-in-out duration-500 sm:group-hover:text-[#a3b4f6]"
                                         : "hidden"
                                 }
                                 viewBox="0 0 16 16"

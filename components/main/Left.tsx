@@ -15,7 +15,7 @@ const Left = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <div className="font-medium tracking-tight text-slate-200 sm:text-xl text-balance mt-4">
+                    <div className="font-medium tracking-tight text-slate-200 sm:text-xl text-nowrap mt-4">
                         Software Engineer @ University of Waterloo
                         <span className="inline-flex">
                             <svg

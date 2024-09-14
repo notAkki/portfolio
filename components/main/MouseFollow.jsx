@@ -29,7 +29,7 @@ const Mousefollow = () => {
     return (
         <div
             ref={ref}
-            className="mousefollow hidden md:block"
+            className="hidden mousefollow md:block"
             style={{
                 transform: `translate(${x}px, ${y}px)`,
             }}

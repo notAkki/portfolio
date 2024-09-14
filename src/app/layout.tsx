@@ -40,6 +40,7 @@ export default function RootLayout({
             >
                 <div>
                     {children}
+                    <div className="mousefollowmobile md:hidden absolute bottom-0 -right-16"></div>
                     <MouseFollow />
                 </div>
             </body>
