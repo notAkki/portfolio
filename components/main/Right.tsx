@@ -1,13 +1,12 @@
 import React from "react";
-import About from "../sub/About";
-import Projects from "../sub/Projects";
-import Writings from "../sub/Writings";
-import Footer from "../sub/Footer";
-import Experiences from "../sub/Experiences";
+import Projects from "../sections/Projects";
+import Writings from "../sections/Writings";
+import Footer from "../sections/Footer";
+import Experiences from "../sections/Experiences";
 
-const Content = () => {
+const Right = () => {
     return (
-        <div id="content" className="pt-24 lg:w-1/2">
+        <div id="right" className="pt-24 lg:w-1/2">
             <section
                 id="experience"
                 className="section mb-6 scroll-mt-24 md:mb-24"
@@ -31,4 +30,4 @@ const Content = () => {
     );
 };
 
-export default Content;
+export default Right;

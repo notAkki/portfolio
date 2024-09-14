@@ -5,7 +5,7 @@ import Image from "next/image";
 
 type ExpProps = (typeof experienceData)[number];
 
-function Project({
+function ExperiencePreview({
     position,
     company,
     date,
@@ -18,27 +18,24 @@ function Project({
     return (
         <div className="mb-6 sm:mb-8">
             <a href={link} target={"_blank"} rel="noreferrer noopener">
-                <div
-                    className="rounded-xl transition ease-in-out bg-black/0 hover:bg-[#7a92f006] duration-300 
-                flex flex-row group pt-4"
-                >
+                <div className="rounded-xl transition ease-in-out flex flex-row group pt-4">
                     <Image
                         src={imageUrl}
                         alt={alt}
                         quality={100}
                         priority
-                        className="ml-4 h-16 w-16 sm:h-[70px] sm:w-[70px] object-scale-down group"
+                        className="ml-0 h-16 w-16 sm:h-[70px] sm:w-[70px] object-scale-down group"
                     />
                     <div className="pb-4 ml-4 pr-2 pt-2 flex flex-col group">
                         <div className="text-xs font-bold">{date}</div>
                         <div className="text-lg text-slate-200 font-semibold group">
-                            <div className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-balance">
+                            <div className="sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-balance">
                                 {position}
                                 <span>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor"
-                                        className="inline h-4 w-4 ml-2 -mt-2 group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-md group-hover:translate-x-1 group-hover:-translate-y-0.5"
+                                        className="inline h-4 w-4 ml-2 -mt-2 sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-md group-hover:translate-x-1 group-hover:-translate-y-0.5"
                                         viewBox="0 0 16 16"
                                     >
                                         <path
@@ -52,7 +49,7 @@ function Project({
                                     </svg>
                                 </span>
                             </div>
-                            <div className="font-normal text-base group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
+                            <div className="font-normal text-base sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
                                 @ {company}
                             </div>
                         </div>
@@ -76,4 +73,4 @@ function Project({
     );
 }
 
-export default Project;
+export default ExperiencePreview;

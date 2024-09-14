@@ -4,18 +4,18 @@ import { PostMetadata } from "../PostMetadata";
 const PostPreview = (props: PostMetadata) => {
     return (
         <div className="mb-0">
-            <div className="rounded-xl relative transition ease-in-out bg-black/0 hover:bg-[#7a92f006] duration-300 group">
+            <div className="relative group">
                 <a href={`/posts/${props.slug}`} rel="noreferrer noopener">
-                    <div className="pt-4 pb-7 px-5 sm:pl-5 sm:pr-2 sm:pt-6 flex flex-col h-full">
+                    <div className="pt-4 pb-7 sm:pr-2 sm:pt-6 flex flex-col h-full">
                         <div className="text-xs font-bold">{props.date}</div>
                         <div className="flex text-lg text-slate-200 font-semibold group">
-                            <div className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-pretty">
+                            <div className="sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500 text-pretty">
                                 {props.title}
                                 <span>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor"
-                                        className="inline h-4 w-4 ml-2 -mt-2 group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-md group-hover:translate-x-1 group-hover:-translate-y-0.5"
+                                        className="inline h-4 w-4 ml-2 -mt-2 sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-md group-hover:translate-x-1 group-hover:-translate-y-0.5"
                                         viewBox="0 0 16 16"
                                     >
                                         <path

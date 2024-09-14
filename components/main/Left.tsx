@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../sub/Nav";
 import Links from "../sub/Links";
 
-const Header = () => {
+const Left = () => {
     return (
         <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
             <div>
@@ -19,7 +19,7 @@ const Header = () => {
                         Software Engineer @ University of Waterloo
                         <span className="inline-flex">
                             <svg
-                                className="h-4 w-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition duration-500 ease-in-out"
+                                className="h-4 w-4 ml-3 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition duration-500 ease-in-out"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
                                 viewBox="0 0 16 16"
@@ -38,18 +38,18 @@ const Header = () => {
                 </a>
 
                 <div className="mt-4 max-w-xs leading-normal">
-                    Seeking winter 2025 internships.
+                    Seeking winter 2025 internships
                 </div>
-                <div className="lg:mr-[69px] mt-10">
-                    <div className="mb-4 leading-relaxed">
+                <div className="lg:mr-[70px] mt-4 md:mt-8 leading-relaxed">
+                    <div className="mb-4">
                         I'm an aspiring software developer with keen interest in
                         crafting UI/UX and exploring technology and design.
                     </div>
-                    <div className="mb-4 leading-relaxed">
+                    <div className="mb-4">
                         I'm working on expanding my horizons by learning about
                         machine learning and cloud development.
                     </div>
-                    <div className="leading-relaxed">
+                    <div>
                         I like playing Minecraft with friends and speed typing.
                         I also enjoy basketball, ultimate frisbee, and Rubik's
                         cube solving.
@@ -62,4 +62,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Left;

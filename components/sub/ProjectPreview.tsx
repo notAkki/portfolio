@@ -5,7 +5,7 @@ import Image from "next/image";
 
 type ProjectProps = (typeof projectsData)[number];
 
-function Project({
+function ProjectReview({
     title,
     description,
     tags,
@@ -17,19 +17,17 @@ function Project({
     hasAchievement,
 }: ProjectProps) {
     return (
-        <div className="mb-6 sm:mb-8 last:mb-0">
+        <div className="mb-6 sm:mb-8 last:mb-0 sm:h-64">
             <a
                 href={link}
                 target={isLink ? "_blank" : "_self"}
                 rel="noreferrer noopener"
+                className="group"
             >
-                <div
-                    className="rounded-xl transition ease-in-out bg-black/0 hover:bg-[#7a92f006] duration-300 
-                relative flex flex-col-reverse sm:flex-row group"
-                >
-                    <div className="pt-4 pb-7 px-5 sm:w-[50%] sm:pl-5 sm:pr-2 sm:pt-7 sm:flex sm:flex-col sm:h-full group">
+                <div className="h-full rounded-xl relative flex flex-col-reverse sm:flex-row group">
+                    <div className="pt-4 pb-7 px-5 sm:w-[50%] sm:px-0 sm:py-0 sm:my-auto sm:flex sm:flex-col group">
                         <div className="flex text-lg text-slate-200 font-semibold group">
-                            <div className="group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
+                            <div className="sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
                                 {title}
                             </div>
                             <svg
@@ -37,7 +35,7 @@ function Project({
                                 fill="currentColor"
                                 className={
                                     isLink
-                                        ? "inline h-4 w-4 ml-2 mt-1 group-hover:translate-x-1 group-hover:-translate-y-0.5 transition ease-in-out duration-500 group-hover:text-[#a3b4f6]"
+                                        ? "inline h-4 w-4 ml-2 mt-1 sm:group-hover:translate-x-1 group-hover:-translate-y-0.5 transition ease-in-out duration-500 group-hover:text-[#a3b4f6]"
                                         : "hidden"
                                 }
                                 viewBox="0 0 16 16"
@@ -54,7 +52,9 @@ function Project({
                         </div>
                         <div
                             className={
-                                hasAchievement ? "text-sm font-bold" : "hidden"
+                                hasAchievement
+                                    ? "text-slate-200 text-sm font-bold sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500"
+                                    : "hidden"
                             }
                         >
                             {achievement}
@@ -73,13 +73,11 @@ function Project({
                             ))}
                         </ul>
                     </div>
-                    <div className="px-4 sm:px-0 sm:w-[50%] group">
+                    <div className="px-10 sm:p-0 sm:w-[calc(50%-8px)] group aspect-[5/3] sm:aspect-[4/3] relative my-auto rounded-lg">
                         <Image
                             src={imageUrl}
                             alt={alt}
-                            quality={95}
-                            priority
-                            className="h-[90%] sm:mt-[5%] sm:place-self-center aspect-[5/3] rounded-lg border-2 border-[#7a92f0]/45 sm:border-[#7a92f0]/15 object-cover group-hover:border-[#7a92f0]/50 group-hover:shadow-md group-hover:shadow-indigo-950/20 transition ease-in-out duration-500"
+                            className="object-cover aspect-[4/3] rounded-lg sm:group-hover:scale-105 transition ease-in-out duration-500"
                         />
                     </div>
                 </div>
@@ -88,4 +86,4 @@ function Project({
     );
 }
 
-export default Project;
+export default ProjectReview;

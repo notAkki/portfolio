@@ -1,14 +1,14 @@
 import React from "react";
 import { experienceData } from "../../lib/data";
-import Experience from "./Experience";
+import ExperiencePreview from "../sub/ExperiencePreview";
 
 const Projects = () => {
     return (
         <div>
-            <p className="text-slate-200 text-s font-bold mb-4 ">EXPERIENCE</p>
+            <p className="text-slate-200 font-bold mb-4 ">EXPERIENCE</p>
             <div>
                 {experienceData.map((experience) => (
-                    <>{<Experience {...experience} />}</>
+                    <>{<ExperiencePreview {...experience} />}</>
                 ))}
             </div>
             <div>

@@ -1,6 +1,6 @@
 import React from "react";
 import getPostMetadata from "../getPostMetadata";
-import PostPreview from "./PostPreview";
+import PostPreview from "../sub/PostPreview";
 
 const Writings = () => {
     const postMetadata = getPostMetadata();

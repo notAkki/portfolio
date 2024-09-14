@@ -78,7 +78,7 @@ const Nav = () => {
                             </li>
                         );
                     })}
-                    <div className="mover"></div>
+                    <div className="mover w-max flex"></div>
                 </ul>
             </div>
         </nav>

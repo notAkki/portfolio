@@ -10,6 +10,7 @@ const Links = () => {
                         href="https://github.com/notAkki"
                         target="_blank"
                         rel="noreferrer noopener"
+                        id="Github link"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -28,6 +29,7 @@ const Links = () => {
                         href="https://www.linkedin.com/in/aksharbarot/"
                         target="_blank"
                         rel="noreferrer noopener"
+                        id="Linkedin link"
                     >
                         <svg
                             className="h-6 w-6"
@@ -47,6 +49,7 @@ const Links = () => {
                         href="https://x.com/notakki_"
                         target="_blank"
                         rel="noreferrer noopener"
+                        id="Twitter/X link"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +67,7 @@ const Links = () => {
                         href="mailto:akshar.barot67@gmail.com"
                         target="_blank"
                         rel="noreferrer noopener"
+                        id="Email link"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
