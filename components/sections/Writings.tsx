@@ -1,11 +1,11 @@
 import React from "react";
 import getPostMetadata from "../getPostMetadata";
-import PostPreview from "../sub/PostPreview";
+import WritingPreview from "../sub/WritingPreview";
 
 const Writings = () => {
     const postMetadata = getPostMetadata();
     const postPreviews = postMetadata.map((post) => (
-        <PostPreview key={post.slug} {...post} />
+        <WritingPreview key={post.slug} {...post} />
     ));
     return (
         <div>
