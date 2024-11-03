@@ -2,6 +2,8 @@ import jarvis from "../public/jarvis.png";
 import shopping from "../public/shopping.png";
 import click from "../public/click.png";
 import basic from "../public/basic.png";
+import spots from "../public/spots.png";
+import colors from "../public/colors.png";
 
 import watstreet from "../public/watstreet.png";
 import brewbites from "../public/brewbites.png";
@@ -33,6 +35,18 @@ export const experienceData = [
 
 export const projectsData = [
     {
+        title: "Spots",
+        description:
+            "A 3D classroom availability map to help students find study spots on campus.",
+        tags: ["Next.js", "Flask", "Python", "Mapbox"],
+        imageUrl: spots,
+        link: "https://spots.aksharbarot.com/",
+        isLink: true,
+        alt: "Spots Project Image",
+        achievement: "10000+ users in 5 days",
+        hasAchievement: true,
+    },
+    {
         title: "Jarvis",
         description:
             "An interactive 3D hologram environment with object manipulation, voice commands, & gesture recognition.",
@@ -43,6 +57,18 @@ export const projectsData = [
         alt: "Jarvis Project Image",
         achievement: "Featured on OpenCV Live",
         hasAchievement: true,
+    },
+    {
+        title: "Colors",
+        description:
+            "A tool allowing easy conversion of color formats for Tailwind.",
+        tags: ["Next.js", "Tailwind", "shadcn"],
+        imageUrl: colors,
+        link: "https://colors.aksharbarot.com/",
+        isLink: true,
+        alt: "Colors Project Image",
+        achievement: "",
+        hasAchievement: false,
     },
     {
         title: "BASIC Web",
