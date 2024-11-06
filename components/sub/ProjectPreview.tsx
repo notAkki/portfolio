@@ -51,7 +51,11 @@ function ProjectReview({
                 rel="noreferrer noopener"
                 className="group"
             >
-                <div className="h-full rounded-xl relative flex flex-col-reverse sm:flex-row group">
+                <div
+                    className={`h-full rounded-xl relative flex flex-col-reverse sm:flex-row group ${
+                        isLink ? "" : "cursor-default"
+                    }`}
+                >
                     <div className="pt-4 pb-7 px-5 sm:w-[50%] sm:px-0 sm:py-0 sm:my-auto sm:flex sm:flex-col group">
                         <div className="flex text-lg text-slate-200 font-semibold group">
                             <div className="sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500">
@@ -76,7 +80,11 @@ function ProjectReview({
                                     d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
                                 />
                             </svg> */}
-                            <LinkSquare02Icon className="inline h-4 w-4 ml-2 mt-[5px] text-slate-200 sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-md group-hover:translate-x-1 group-hover:-translate-y-0.5" />
+                            <LinkSquare02Icon
+                                className={`inline h-4 w-4 ml-2 mt-[5px] text-slate-200 sm:group-hover:text-[#a3b4f6] transition ease-in-out duration-500 group-hover:shadow-md group-hover:translate-x-1 group-hover:-translate-y-0.5 ${
+                                    isLink ? "" : "hidden"
+                                }`}
+                            />
                         </div>
                         <div
                             className={
