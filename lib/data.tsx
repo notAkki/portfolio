@@ -59,18 +59,6 @@ export const projectsData = [
         hasAchievement: true,
     },
     {
-        title: "Colors",
-        description:
-            "A tool allowing easy conversion of color formats for Tailwind.",
-        tags: ["Next.js", "Tailwind", "shadcn"],
-        imageUrl: colors,
-        link: "https://colors.aksharbarot.com/",
-        isLink: true,
-        alt: "Colors Project Image",
-        achievement: "",
-        hasAchievement: false,
-    },
-    {
         title: "BASIC Web",
         description:
             "A BASIC variant and compiler for frontend web development built during UofT Hacks 2024.",
@@ -81,6 +69,18 @@ export const projectsData = [
         alt: "BASICWeb Project Image",
         achievement: "UofT Hacks 2024 Winner",
         hasAchievement: true,
+    },
+    {
+        title: "Colors",
+        description:
+            "A tool allowing easy conversion of color formats for Tailwind.",
+        tags: ["Next.js", "Tailwind", "shadcn"],
+        imageUrl: colors,
+        link: "https://colors.aksharbarot.com/",
+        isLink: true,
+        alt: "Colors Project Image",
+        achievement: "",
+        hasAchievement: false,
     },
     {
         title: "Shopping List App",
