@@ -65,8 +65,8 @@ const Left = () => {
                     </div>
                 </a>
 
-                <div className="mt-4 max-w-xs leading-normal">
-                    Seeking winter 2025 internships
+                <div className="mt-2 leading-normal whitespace-pre">
+                    Incoming @ Shopify | Seeking Fall 2025 Internships
                 </div>
                 <div className="lg:mr-[70px] mt-4 md:mt-8 leading-relaxed">
                     <div className="mb-4">
