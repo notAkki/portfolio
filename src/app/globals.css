@@ -3,82 +3,82 @@
 @tailwind utilities;
 
 :root {
-    color-scheme: dark;
+  color-scheme: dark;
 }
 
 .mousefollow {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    height: 25vmax;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    filter: blur(10vmax);
-    /* filter: blur(0vmax); */
-    /* background: radial-gradient(#7a92f0, #030014); */
-    /* background: radial-gradient(#4343ff, #030014); */
-    background: #5151ff;
-    opacity: 0.5;
-    z-index: -10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 25vmax;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(10vmax);
+  /* filter: blur(0vmax); */
+  /* background: radial-gradient(#7a92f0, #030014); */
+  /* background: radial-gradient(#4343ff, #030014); */
+  background: #5151ff;
+  opacity: 0.5;
+  z-index: -10;
 
-    transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .mousefollowmobile {
-    position: fixed;
-    height: 30vmax;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    filter: blur(10vmax);
-    /* filter: blur(0vmax); */
-    /* background: radial-gradient(#7a92f0, #030014); */
-    /* background: radial-gradient(#4343ff, #030014); */
-    background: #5151ff;
-    opacity: 0.5;
-    z-index: -10;
+  position: fixed;
+  height: 30vmax;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(10vmax);
+  /* filter: blur(0vmax); */
+  /* background: radial-gradient(#7a92f0, #030014); */
+  /* background: radial-gradient(#4343ff, #030014); */
+  background: #5151ff;
+  opacity: 0.5;
+  z-index: -10;
 
-    transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .nav ul li span.indicator {
-    background-color: #00000000;
+  background-color: #00000000;
 }
 
 .nav ul li.active {
-    color: #e2e8f0;
+  color: #e2e8f0;
 }
 
 .nav ul li.active span.indicator {
-    background-color: #00000000;
-    width: 24px;
+  background-color: #00000000;
+  width: 24px;
 }
 
 .mover {
-    position: absolute;
-    top: 30px;
-    width: 72px;
-    height: 2px;
-    background: #e2e8f0;
-    border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  width: 72px;
+  height: 2px;
+  background: #e2e8f0;
+  border-radius: 10px;
 
-    border: 6px solid var(--clr);
-    transition: 0.5s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border: 6px solid var(--clr);
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav ul li:nth-child(1).active ~ .mover {
-    transform: translateX(0);
-    width: 88px;
+  transform: translateX(0);
+  width: 88px;
 }
 
 .nav ul li:nth-child(2).active ~ .mover {
-    transform: translateX(128px);
-    width: 72px;
+  transform: translateX(128px);
+  width: 72px;
 }
 
 .nav ul li:nth-child(3).active ~ .mover {
-    transform: translateX(242px);
-    width: 57px;
+  transform: translateX(242px);
+  width: 57px;
 }
 /* 
 .nav ul li:nth-child(3).active ~ .mover {
